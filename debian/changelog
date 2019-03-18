@@ -1,0 +1,12 @@
+conmon (0-1~dev~ubuntu18.04~ppa2) bionic; urgency=medium
+
+  * build-depends: libglib2.0-dev
+  * autobuilt cc2b495
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 18 Mar 2019 14:08:04 +0000
+
+conmon (0-1~dev~ubuntu18.04~ppa1) bionic; urgency=medium
+
+  * initial build
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Mon, 18 Mar 2019 09:06:49 -0400

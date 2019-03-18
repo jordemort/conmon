@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+DH_VERBOSE=1
+BUILDDIR := $(shell pwd)
+DESTDIR := $(BUILDDIR)/debian/conmon
+PREFIX := $(DESTDIR)/usr
+LIBEXECDIR := $(PREFIX)/libexec
+
+%:
+	dh $@ --builddirectory=$(BUILDDIR)
+
+override_dh_auto_build:
+	make
+
+override_dh_auto_install:
+	install PREFIX=$(PREFIX) -dp $(LIBEXECDIR)
+	make PREFIX=$(PREFIX) LIBEXECDIR=$(LIBEXECDIR) install
+
+override_dh_auto_clean:
+	rm -rf bin
