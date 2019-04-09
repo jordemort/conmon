@@ -10,5 +10,5 @@ Vcs-Git: git://github.com/lsm5/conmon.git
 
 Package: conmon
 Architecture: any
-Depends: ${misc:Depends},
+Depends: ${misc:Depends}, libglib2.0-0
 Description: OCI container runtime monitor

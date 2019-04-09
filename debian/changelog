@@ -1,4 +1,4 @@
-conmon (0.1~20190405+8768d06+stretch1) stretch; urgency=medium
+conmon (0.1~20190405+8768d06+stretch2) stretch; urgency=medium
 
   * Port to stretch
 
