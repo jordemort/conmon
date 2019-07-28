@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Lokesh Mandvekar <lsm5@fedoraproject.org>
 Build-Depends: debhelper (>=9),
    libglib2.0-dev
-Standards-Version: 3.9.6
+Standards-Version: 4.3.0
 Homepage: https://github.com/containers/conmon.git
 Vcs-Git: git://github.com/lsm5/conmon.git
 
