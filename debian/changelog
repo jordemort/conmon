@@ -2,6 +2,12 @@ conmon (1.0.0-1~ubuntu19.04~ppa1) disco; urgency=medium
 
   * bump to v1.0.0-rc2
 
+ -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 07 Aug 2019 08:33:24 +0000
+
+conmon (1.0.0-1~ubuntu19.04~ppa1) disco; urgency=medium
+
+  * bump to v1.0.0-rc2
+
  -- Lokesh Mandvekar (Bot) <lsm5+bot@fedoraproject.org>  Wed, 07 Aug 2019 07:26:56 +0000
 
 conmon (1.0.0-1~ubuntu19.04~ppa1) disco; urgency=medium
