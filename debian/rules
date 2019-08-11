@@ -5,6 +5,7 @@ BUILDDIR := $(shell pwd)
 DESTDIR := $(BUILDDIR)/debian/conmon
 PREFIX := $(DESTDIR)/usr
 LIBEXECDIR := $(PREFIX)/libexec
+UPSTREAM_TAG=v2.0.0
 
 %:
 	dh $@ --builddirectory=$(BUILDDIR)
