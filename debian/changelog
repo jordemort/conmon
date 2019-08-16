@@ -1,3 +1,9 @@
+conmon (2.0.0-1~ubuntu19.04~ppa2) disco; urgency=medium
+
+  * install for podman and crio
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Fri, 16 Aug 2019 13:45:32 +0000
+
 conmon (2.0.0-1~ubuntu19.04~ppa1) disco; urgency=medium
 
   * bump to v2.0.0

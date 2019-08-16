@@ -14,8 +14,7 @@ override_dh_auto_build:
 	make
 
 override_dh_auto_install:
-	install PREFIX=$(PREFIX) -dp $(LIBEXECDIR)
-	make PREFIX=$(PREFIX) LIBEXECDIR=$(LIBEXECDIR) install
+	make PREFIX=$(PREFIX) LIBEXECDIR=$(LIBEXECDIR) install.bin install.crio install.podman
 
 override_dh_auto_clean:
 	rm -rf bin
