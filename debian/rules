@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+DH_VERBOSE=1
+BUILDDIR := $(shell pwd)
+DESTDIR := $(BUILDDIR)/debian/conmon
+PREFIX := $(DESTDIR)/usr
+LIBEXECDIR := $(PREFIX)/libexec
+LDFLAGS += -L/usr/lib64
+UPSTREAM_TAG=v2.0.11
+
+%:
+	dh $@ --builddirectory=$(BUILDDIR)
+
+override_dh_auto_build:
+	make
+
+override_dh_auto_install:
+	make PREFIX=$(PREFIX) LDFLAGS="$(LDFLAGS)" LIBEXECDIR=$(LIBEXECDIR) install.bin install.crio install.podman
+
+override_dh_auto_clean:
+	rm -rf bin
